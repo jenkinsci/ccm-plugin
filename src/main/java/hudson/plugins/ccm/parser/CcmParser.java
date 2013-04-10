@@ -125,11 +125,8 @@ public class CcmParser extends AbstractAnnotationParser {
 				priority = Priority.NORMAL;
 			}
 
-            /**
-             * Bug requires 0 offset for line numbers
-             */
 			Bug bug = new Bug(priority, warning.getClassification(), warning.getClassification(), 
-					"Cyclomatic Complexity", warning.getStartLineNumber()-1, warning.getEndLineNumber()-1);
+					"Cyclomatic Complexity", warning.getStartLineNumber(), warning.getEndLineNumber());
 			bug.setPackageName("");
 			bug.setModuleName(moduleName);
 			bug.setFileName(warning.getFile());
