@@ -31,6 +31,8 @@ extends TestCase
 		metric.setUnit("X");
 		metric.setClassification("Good");
 		metric.setComplexity(5);
+		metric.setStartLineNumber(1);
+		metric.setEndLineNumber(2);
 		metricList.add(metric);
 		
 		metric = new Metric();
@@ -38,6 +40,8 @@ extends TestCase
 		metric.setUnit("Y");
 		metric.setClassification("OK");
 		metric.setComplexity(3);
+		metric.setStartLineNumber(3);
+		metric.setEndLineNumber(4);
 		metricList.add(metric);
 		
 		ccm.setMetrics(metricList);

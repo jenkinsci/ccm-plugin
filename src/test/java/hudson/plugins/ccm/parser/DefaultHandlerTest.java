@@ -1,6 +1,7 @@
 package hudson.plugins.ccm.parser;
 
 import junit.framework.TestCase;
+import static junit.framework.TestCase.assertNotNull;
 
 /**
  * Tests DefaultHandler.
@@ -20,10 +21,14 @@ extends TestCase
 		metric.setUnit("X");
 		metric.setClassification("Good");
 		metric.setComplexity(5);
+		metric.setStartLineNumber(1);
+		metric.setEndLineNumber(2);
 		
 		assertNotNull( metric.getFile() );
 		assertNotNull( metric.getUnit() );
 		assertNotNull( metric.getClassification() );
 		assertNotNull( metric.getComplexity() );
+		assertNotNull( metric.getStartLineNumber() );
+		assertNotNull( metric.getEndLineNumber() );
 	}
 }

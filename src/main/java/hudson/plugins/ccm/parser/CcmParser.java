@@ -88,6 +88,8 @@ public class CcmParser extends AbstractAnnotationParser {
             digester.addBeanPropertySetter("ccm/metric/unit");
             digester.addBeanPropertySetter("ccm/metric/classification");
             digester.addBeanPropertySetter("ccm/metric/file");
+            digester.addBeanPropertySetter("ccm/metric/startLineNumber");
+            digester.addBeanPropertySetter("ccm/metric/endLineNumber");
             digester.addSetNext(fileMetric, "addMetric", Metric.class.getName());
 
             Ccm module = (Ccm)digester.parse(file);
@@ -123,8 +125,11 @@ public class CcmParser extends AbstractAnnotationParser {
 				priority = Priority.NORMAL;
 			}
 
+            /**
+             * Bug requires 0 offset for line numbers
+             */
 			Bug bug = new Bug(priority, warning.getClassification(), warning.getClassification(), 
-					"Cyclomatic Complexity", 0, 0);
+					"Cyclomatic Complexity", warning.getStartLineNumber()-1, warning.getEndLineNumber()-1);
 			bug.setPackageName("");
 			bug.setModuleName(moduleName);
 			bug.setFileName(warning.getFile());
