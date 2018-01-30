@@ -42,9 +42,6 @@ public class CcmDescriptor extends PluginDescriptor {
     /** The URL of the result action. */
     static final String RESULT_URL = PluginDescriptor.createResultUrlName(PLUGIN_NAME);
 	
-	/**
-	 * @param clazz
-	 */
 	public CcmDescriptor() {
 		super(CcmPublisher.class);
 	}

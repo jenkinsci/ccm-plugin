@@ -37,7 +37,7 @@ import hudson.plugins.analysis.core.PluginDescriptor;
  */
 public class CcmProjectAction extends AbstractProjectAction<ResultAction<CcmResult>>  {
 	/**
-     * Instantiates a new {@link PmdProjectAction}.
+     * Instantiates a new {@link CcmProjectAction}.
      *
      * @param project
      *            the project that owns this action
@@ -48,7 +48,7 @@ public class CcmProjectAction extends AbstractProjectAction<ResultAction<CcmResu
     }
     
     /**
-     * Instantiates a new {@link PmdProjectAction}.
+     * Instantiates a new {@link CcmProjectAction}.
      *
      * @param project
      *            the project that owns this action
@@ -61,7 +61,7 @@ public class CcmProjectAction extends AbstractProjectAction<ResultAction<CcmResu
     }
     
     /**
-     * Instantiates a new {@link PmdProjectAction}.
+     * Instantiates a new {@link CcmProjectAction}.
      *
      * @param project
      *            the project that owns this action
