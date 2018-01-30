@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Entity used by {@link CCMParser} to represent the root node of CCM results
+ * Entity used by {@link CcmParser} to represent the root node of CCM results
  * file.
  * 
  * @author Bruno P. Kinoshita - http://www.kinoshita.eti.br

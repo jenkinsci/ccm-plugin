@@ -48,7 +48,7 @@ public class CcmParser extends AbstractAnnotationParser {
 	private static final long serialVersionUID = -5172155190810975806L;
 	
 	/**
-     * Creates a new instance of {@link PmdParser}.
+     * Creates a new instance of {@link CcmParser}.
      */
     public CcmParser() {
         super(StringUtils.EMPTY);
