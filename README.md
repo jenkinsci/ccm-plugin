@@ -1,10 +1,8 @@
 # CCM
 
-[Wiki page](https://wiki.jenkins-ci.org/display/JENKINS/CCM+Plugin)
+## This plugin reached end-of-life. 
 
-## Introduction
-
-This plug-in generates reports on cyclomatic complexity for .NET code.
-
-This plugin requires the utility plug-in "analysis-core" (called "Static Analysis Utilities" in the update manager). Please ensure that the latest version of this plug-in is also installed.
+All functionality has been integrated into the 
+[Warnings Next Generation Plugin](https://github.com/jenkinsci/warnings-ng-plugin)
+and the [Static Analysis Model and Parsers Library](https://github.com/jenkinsci/analysis-model).
 
