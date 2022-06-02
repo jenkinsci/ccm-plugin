@@ -42,7 +42,7 @@
     </distributionManagement>
 
     <properties>
-        <workflow.version>1.7</workflow.version>
+        <workflow.version>2.65</workflow.version>
     </properties>
 
 	<developers>
